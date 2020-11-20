@@ -8,6 +8,7 @@ import FilesView from './components/FilesView';
 import CameraScreen from './components/CameraScreen';
 import Gallery from './components/Gallery';
 import Preview from './components/Preview';
+import ResetPassword from './components/ResetPassword';
 
 const Stack = createStackNavigator();
 
@@ -19,8 +20,9 @@ export default App = (props) => {
           name="Welcome"
           options={{
             headerTintColor: 'white',
-            headerStyle: {backgroundColor: 'purple'},
-          }}>
+            headerStyle: {backgroundColor: 'purple',},
+          }}
+          >
           {() => <SplashScreen {...props} />}
         </Stack.Screen>
         <Stack.Screen
@@ -52,12 +54,20 @@ export default App = (props) => {
           component={Gallery}
           options={{
             headerTintColor: 'white',
-            headerStyle: {backgroundColor: 'purple'},
+            headerStyle: {backgroundColor: 'purple', alignItems:'center'},
           }}
         />
         <Stack.Screen
           name="Preview"
           component={Preview}
+          options={{
+            headerTintColor: 'white',
+            headerStyle: {backgroundColor: 'purple'},
+          }}
+        />
+        <Stack.Screen
+          name="PasswordReset"
+          component={ResetPassword}
           options={{
             headerTintColor: 'white',
             headerStyle: {backgroundColor: 'purple'},
