@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Appbar} from 'react-native-paper';
 import {
   View,
   Text,
@@ -14,23 +15,25 @@ export default ResetPassword = ({navigation, ...props}) => {
   const [cPass, setCpass] = React.useState('');
   function validation() {
     if (!user.trim() || !nPass.trim() || !cPass.trim()) {
-        
       Alert.alert('username and passwords cannot be empty');
       return;
     }
-    if (user.includes('admin') && nPass === cPass) {
-     
+    if ((user.includes('admin') || user.includes('Admin')) && nPass === cPass) {
       Keyboard.dismiss();
       navigation.navigate('Login');
       props.route.params.callbackPass(cPass);
     } else {
-      
       Alert.alert('New Password and Confirm Passwords donot match..!!');
     }
   }
 
   return (
     <View style={{flex: 1}}>
+      <Appbar.Header>
+        <Appbar.BackAction onPress={() => navigation.goBack()} />
+        <Appbar.Content title="Reset Password" />
+        <Appbar.Action icon="dots-vertical" />
+      </Appbar.Header>
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <TextInput
           style={{
@@ -79,6 +82,7 @@ export default ResetPassword = ({navigation, ...props}) => {
         }}>
         <TouchableOpacity
           onPress={() => {
+            Keyboard.dismiss();
             navigation.goBack();
           }}>
           <Text

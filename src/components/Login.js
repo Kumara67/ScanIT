@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Appbar} from 'react-native-paper';
 import {
   View,
   Text,
@@ -13,21 +14,11 @@ export default Login = (props) => {
   const [pass, setPass] = React.useState('');
   const [userPass, setUserPass] = React.useState('admin');
 
+
+
   const handlePassChange = (nPass) => {
     setUserPass(nPass);
   };
-//   React.useEffect(() => {
-//     try {
-//       if (
-//         props.route.hasOwnProperty('params') &&
-//         props.route.params.hasOwnProperty('nPass')
-//       ) {
-//         console.log(`>> Got val: ${props.route.params.nPass}`);
-//       }
-//     } catch (err) {
-//       console.log(err.message);
-//     }
-//   }, [props.route.params.nPass]);
 
   function validation() {
     let regEx = new RegExp('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$');
@@ -58,6 +49,12 @@ export default Login = (props) => {
   }
   return (
     <View style={{flex: 1}}>
+      <Appbar.Header>
+        <Appbar.BackAction onPress={() => props.navigation.goBack()} />
+        <Appbar.Content title="Login" />
+        <Appbar.Action icon="dots-vertical" />
+      </Appbar.Header>
+
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <Text
           style={{
@@ -66,7 +63,7 @@ export default Login = (props) => {
             width: 350,
             fontWeight: 'bold',
             fontSize: 18,
-            fontFamily: 'sans',
+            fontFamily: 'tahoma',
           }}>
           Please enter your Username and Password to Login..!!
         </Text>
@@ -103,7 +100,7 @@ export default Login = (props) => {
           }}
           onPress={() => {
             props.navigation.navigate('PasswordReset', {
-              callbackPass: handlePassChange,
+              callbackPass: (npass)=>handlePassChange(npass),
             });
           }}>
           <Text

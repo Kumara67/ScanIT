@@ -4,76 +4,45 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import SplashScreen from './components/SplashScreen';
 import Login from './components/Login';
-import FilesView from './components/FilesView';
+import FileListView from './components/FilesListView';
 import CameraScreen from './components/CameraScreen';
 import Gallery from './components/Gallery';
 import Preview from './components/Preview';
 import ResetPassword from './components/ResetPassword';
+import { Provider as PaperProvider, DefaultTheme } from 'react-native-paper';
+import FileGallery from './components/FileGallery';
 
 const Stack = createStackNavigator();
 
+const theme = {
+  ...DefaultTheme,
+  roundness: 2,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: 'purple',
+    accent: 'white',
+  },
+  
+}; 
+
 export default App = (props) => {
   return (
+      <PaperProvider theme={theme}>
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Welcome"
-          options={{
-            headerTintColor: 'white',
-            headerStyle: {backgroundColor: 'purple',},
-          }}
-          >
+
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Welcome">
           {() => <SplashScreen {...props} />}
         </Stack.Screen>
-        <Stack.Screen
-          name="Login"
-          component={Login}
-          options={{
-            headerTintColor: 'white',
-            headerStyle: {backgroundColor: 'purple'},
-          }}
-        />
-        <Stack.Screen
-          name="FilesList"
-          component={FilesView}
-          options={{
-            headerTintColor: 'white',
-            headerStyle: {backgroundColor: 'purple'},
-          }}
-        />
-        <Stack.Screen
-          name="Capture"
-          component={CameraScreen}
-          options={{
-            headerTintColor: 'white',
-            headerStyle: {backgroundColor: 'purple'},
-          }}
-        />
-        <Stack.Screen
-          name="Gallery"
-          component={Gallery}
-          options={{
-            headerTintColor: 'white',
-            headerStyle: {backgroundColor: 'purple', alignItems:'center'},
-          }}
-        />
-        <Stack.Screen
-          name="Preview"
-          component={Preview}
-          options={{
-            headerTintColor: 'white',
-            headerStyle: {backgroundColor: 'purple'},
-          }}
-        />
-        <Stack.Screen
-          name="PasswordReset"
-          component={ResetPassword}
-          options={{
-            headerTintColor: 'white',
-            headerStyle: {backgroundColor: 'purple'},
-          }}
-        />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="FilesList" component={FileListView} />
+        <Stack.Screen name="Capture" component={CameraScreen} />
+        <Stack.Screen name="Gallery" component={Gallery} />
+        <Stack.Screen name="Preview" component={Preview} />
+        <Stack.Screen name="PasswordReset" component={ResetPassword} />
+        <Stack.Screen name="FileGallery" component={FileGallery} />
       </Stack.Navigator>
     </NavigationContainer>
+      </PaperProvider>
   );
 };
