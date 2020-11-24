@@ -3,7 +3,7 @@ import {Modal, Portal} from 'react-native-paper';
 import {View, Text, TextInput, TouchableOpacity, Keyboard} from 'react-native';
 
 const SaveAsModal = (props) => {
-  const [visible, setVisible] = React.useState(true);
+  const [visible, setVisible] = useState(true);
   const [folderName, setFolderName] = useState('');
   const hideModal = () => setVisible(false);
   return (

@@ -84,6 +84,7 @@ export default Gallery = (props) => {
       },
       {text: 'Cancel', onPress: () => false},
     ]);
+    readDirectory();
     setSelectedItems([]);
   };
 
@@ -225,7 +226,7 @@ export default Gallery = (props) => {
           </Text>
         ) : (
           <Text
-            onPress={() => props.navigation.goBack()}
+            onPress={() => props.navigation.navigate('FilesList')}
             style={{
               backgroundColor: 'purple',
               padding: 10,

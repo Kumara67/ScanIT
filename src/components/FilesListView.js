@@ -16,6 +16,7 @@ export default FileListView = (props) => {
   const [pathsArray, setPathsArray] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
   const [rerender, forceRerender] = useState('someKey');
+  const [logout, setLogout] = useState(true);
 
   useEffect(() => {
     // Subscribe for the focus Listener
@@ -91,16 +92,42 @@ export default FileListView = (props) => {
       {text: 'Cancel', onPress: () => false},
     ]);
     setSelectedItems([]);
+    readDirectory();
+  };
+
+  const _onLogout = () => {
+    try {
+      if (logout) {
+        Alert.alert('Logout','Are you sure want to Logout?', [
+          {
+            text: 'Cancel',
+            onPress: () => setLogout(true),
+          },
+          {
+            text: 'Logout',
+            onPress: () => {
+              Alert.alert(
+                "You're successfully looged out!!    Thank you for using our app.",
+              );  
+              props.navigation.navigate('Welcome');
+            },
+          },
+        ]);
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 
   return (
     <View style={{flex: 1}}>
       <Appbar.Header>
-        <Appbar.BackAction onPress={() => props.navigation.goBack()} />
+        <Appbar.BackAction onPress={() => _onLogout()} />
         <Appbar.Content title="Files List" />
         <Appbar.Action icon="magnify" />
         <Appbar.Action icon="dots-vertical" />
       </Appbar.Header>
+
       {pathsArray.length === 0 ? (
         <View style={{flex: 1, justifyContent: 'center'}}>
           {selectedItems.length > 0 && (

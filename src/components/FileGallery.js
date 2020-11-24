@@ -86,6 +86,7 @@ export default FileGallery = (props) => {
       },
       {text: 'Cancel', onPress: () => false},
     ]);
+    readDirectory();
     setSelectedItems([]);
   };
 
