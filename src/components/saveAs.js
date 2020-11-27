@@ -1,10 +1,12 @@
 import React, {Component, useState} from 'react';
 import {Modal, Portal} from 'react-native-paper';
 import {View, Text, TextInput, TouchableOpacity, Keyboard} from 'react-native';
+import {connect} from 'react-redux';
+import {updateShowModal, updateUserFolder} from '../actions/actionDefs';
 
 const SaveAsModal = (props) => {
+  const [newFolder, setNewFolder] = useState('');
   const [visible, setVisible] = useState(true);
-  const [folderName, setFolderName] = useState('');
   const hideModal = () => setVisible(false);
   return (
     <Portal>
@@ -35,13 +37,14 @@ const SaveAsModal = (props) => {
             fontSize: 30,
           }}
           placeholder="FolderName"
-          onChangeText={(text) => setFolderName(text)}
+          onChangeText={(text) => setNewFolder(text)}
         />
         <View style={{flexDirection: 'row'}}>
           <Text
             onPress={() => {
               Keyboard.dismiss();
-              props.saveHandler(folderName);
+              props.updateShowModal(false);
+              props.saveHandler(newFolder);
               hideModal();
             }}
             style={{
@@ -58,6 +61,7 @@ const SaveAsModal = (props) => {
           </Text>
           <Text
             onPress={() => {
+              props.updateShowModal(false);
               hideModal();
             }}
             style={{
@@ -77,5 +81,15 @@ const SaveAsModal = (props) => {
     </Portal>
   );
 };
-
-export default SaveAsModal;
+const mapStateToProps = (state) => {
+  return {
+    userFolder: state.CameraReducer.userFolder,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateUserFolder: (folder) => dispatch(updateUserFolder(folder)),
+    updateShowModal: (modal) => dispatch(updateShowModal(modal)),
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(SaveAsModal);

@@ -1,18 +1,27 @@
 import React, {Component, useEffect, useState} from 'react';
 import {View, Text, TouchableOpacity, TextInput, Image} from 'react-native';
 import {RNCamera} from 'react-native-camera';
-import {Appbar, Modal} from 'react-native-paper';
+import {Appbar} from 'react-native-paper';
 import * as RNFS from 'react-native-fs';
 import SaveAsModal from './saveAs';
+import {
+  updateCount,
+  updateLastClicked,
+  updateSelectedItems,
+  updateShowModal,
+  updateTmpData,
+  updateUserFolder,
+} from '../actions/actionDefs';
+import {connect} from 'react-redux';
 
-export default CameraScreen = (props) => {
+const CameraScreen = (props) => {
   var cameraRef = React.useRef(null);
-  const [clickedItems, setClickedItems] = useState([]);
-  const [count, setCount] = useState(0);
-  const [lastClicked, setLastClicked] = useState('');
-  const [userFolder, setUserFolder] = useState('');
-  const [showModal, setShowModal] = useState(false);
-  const [tmpData, setTempData] = useState(null);
+  // const {count, lastClicked, showModal, tmpData, userFolder} = props;
+  // const [count, setCount] = useState(0);
+  // const [lastClicked, setLastClicked] = useState('');
+  // const [userFolder, setUserFolder] = useState('');
+  // const [showModal, setShowModal] = useState(false);
+  // const [tmpData, setTempData] = useState(null);
   useEffect(() => {
     const {params} = props.route;
     if (
@@ -20,7 +29,7 @@ export default CameraScreen = (props) => {
       params !== null &&
       params.hasOwnProperty('folderName')
     ) {
-      setUserFolder(props.route.params.folderName);
+      props.updateUserFolder(props.route.params.folderName);
     }
   }, []);
 
@@ -28,17 +37,16 @@ export default CameraScreen = (props) => {
     if (cameraRef) {
       const options = {quality: 0.5, base64: true};
       const data = await cameraRef.current.takePictureAsync(options);
-      setTempData(data.base64);
-      if (userFolder === '') {
-        setShowModal(true);
+      props.updateTmpData(data.base64);
+      if (props.userFolder === '') {
+        props.updateShowModal(true);
       } else {
-        saveFileAs(userFolder, data.base64);
+        saveFileAs(props.userFolder, data.base64);
       }
     }
   };
 
-  const saveFileAs = async (docName, data = tmpData) => {
-    const nItems = clickedItems;
+  const saveFileAs = async (docName, data = props.tmpData) => {
     try {
       const dirName = `${RNFS.ExternalDirectoryPath}/${docName}`;
       const dirExists = await RNFS.exists(dirName);
@@ -48,10 +56,10 @@ export default CameraScreen = (props) => {
       const path = `${dirName}/ScanIt-${getTimeStamp()}.jpg`;
       await RNFS.writeFile(path, data, 'base64');
       console.log('FILE WRITTEN!');
-      //nItems.push(data.base64);
-      //setClickedItems(nItems);
-      setCount(count + 1);
-      setLastClicked(path);
+      props.updateLastClicked(path);
+      props.updateCount(props.count + 1);
+      props.updateTmpData('');
+      // setLastClicked(path)
     } catch (error) {
       console.log(error.message);
     }
@@ -74,14 +82,22 @@ export default CameraScreen = (props) => {
   return (
     <View style={{flex: 1}}>
       <Appbar.Header>
-        <Appbar.BackAction onPress={() => props.navigation.goBack()} />
+        <Appbar.BackAction
+          onPress={() => {
+            props.navigation.goBack();
+            props.updateUserFolder('');
+            props.updateLastClicked('');
+            props.updateSelectedItems([]);
+          }}
+        />
         <Appbar.Content title="Capture" />
         <Appbar.Action icon="dots-vertical" />
       </Appbar.Header>
-      {showModal && (
+      {props.showModal && (
         <SaveAsModal
           saveHandler={(value) => {
-            setUserFolder(value);
+            props.updateUserFolder(value);
+            console.log(`>> save: ${props.userFolder}`);
             saveFileAs(value);
           }}
         />
@@ -112,7 +128,7 @@ export default CameraScreen = (props) => {
             source={require('../icons/photo-camera.png')}
           />
         </TouchableOpacity>
-        {lastClicked === '' ? null : (
+        {props.lastClicked === '' ? null : (
           <TouchableOpacity
             style={{
               height: 50,
@@ -122,17 +138,18 @@ export default CameraScreen = (props) => {
             }}
             onPress={() => {
               // var imagePath = path;
+              props.updateLastClicked('');
               props.navigation.navigate('Gallery', {
-                folderName: userFolder,
+                folderName: props.userFolder,
               });
-              setCount(0);
+              props.updateCount(0);
             }}>
             <Image
-              source={{uri: `file://${lastClicked}`}}
-              style={{height: 50, width: 50}}
+              source={{uri: `file://${props.lastClicked}`}}
+              style={{height: 60, width: 60}}
             />
 
-            {count === 0 ? null : (
+            {props.count === 0 ? null : (
               <Text
                 style={{
                   color: '#fff',
@@ -149,7 +166,7 @@ export default CameraScreen = (props) => {
                   top: -10,
                   right: -10,
                 }}>
-                {count}
+                {props.count}
               </Text>
             )}
           </TouchableOpacity>
@@ -158,3 +175,24 @@ export default CameraScreen = (props) => {
     </View>
   );
 };
+const mapStateToProps = (state) => {
+  return {
+    count: state.CameraReducer.count,
+    showModal: state.CameraReducer.showModal,
+    lastClicked: state.CameraReducer.lastClicked,
+    tmpData: state.CameraReducer.tmpData,
+    userFolder: state.CameraReducer.userFolder,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateCount: (count) => dispatch(updateCount(count)),
+    updateShowModal: (modal) => dispatch(updateShowModal(modal)),
+    updateLastClicked: (lastClick) => dispatch(updateLastClicked(lastClick)),
+    updateTmpData: (tmpData) => dispatch(updateTmpData(tmpData)),
+    updateUserFolder: (userFolder) => dispatch(updateUserFolder(userFolder)),
+    updateSelectedItems: (data) => dispatch(updateSelectedItems(data)),
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(CameraScreen);

@@ -5,8 +5,8 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="16"
-9        android:targetSdkVersion="29" />
+8        android:minSdkVersion="22"
+9        android:targetSdkVersion="28" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 11-->/home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifest.xml:5:5-77
@@ -27,8 +27,8 @@
 16-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:13:5-70
 16-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:13:22-68
 17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-17-->[com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:5-76
-17-->[com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:22-73
+17-->[com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2fa344e99fbc8cc928a5b46ed302cce1/jetified-flipper-0.54.0/AndroidManifest.xml:16:5-76
+17-->[com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2fa344e99fbc8cc928a5b46ed302cce1/jetified-flipper-0.54.0/AndroidManifest.xml:16:22-73
 18
 19    <uses-feature
 19-->[:react-native-camera] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
@@ -50,7 +50,7 @@
 28        android:allowBackup="false"
 28-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:20:7-34
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/AndroidManifest.xml:24:18-86
+29-->[androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7f5aeccd48d5bc731df0adf1c8d7029e/core-1.1.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
 31-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:18:7-41
@@ -58,70 +58,71 @@
 32-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:17:7-39
 33        android:roundIcon="@mipmap/ic_launcher_round"
 33-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:19:7-52
-34        android:theme="@style/AppTheme"
-34-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:21:7-38
-35        android:usesCleartextTraffic="true" >
-35-->/home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifest.xml:7:18-53
-36        <activity
-36-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:22:7-32:18
-37            android:name="com.scanit.MainActivity"
-37-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:23:9-37
-38            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-38-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:25:9-86
-39            android:label="@string/app_name"
-39-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:24:9-41
-40            android:launchMode="singleTask"
-40-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:26:9-40
-41            android:windowSoftInputMode="adjustResize" >
-41-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:27:9-51
-42            <intent-filter>
-42-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:28:9-31:25
-43                <action android:name="android.intent.action.MAIN" />
-43-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:29:13-65
-43-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:29:21-62
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:30:13-73
-45-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:30:23-70
-46            </intent-filter>
-47        </activity>
-48        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-48-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:33:7-84
-48-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:33:17-81
-49
-50        <provider
-50-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
-51            android:name="cl.json.RNShareFileProvider"
-51-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-55
-52            android:authorities="com.scanit.rnshare.fileprovider"
-52-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-72
-53            android:exported="false"
-53-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
-54            android:grantUriPermissions="true" >
-54-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
-55            <meta-data
-55-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:64
-56                android:name="android.support.FILE_PROVIDER_PATHS"
-56-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
-57                android:resource="@xml/share_download_paths" />
-57-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-61
-58        </provider>
-59
-60        <activity
-60-->[com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/388c06cf8b3bbec2257cd4abf556b408/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
-61            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-61-->[com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/388c06cf8b3bbec2257cd4abf556b408/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
-62            android:exported="false"
-62-->[com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/388c06cf8b3bbec2257cd4abf556b408/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
-63            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-63-->[com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/388c06cf8b3bbec2257cd4abf556b408/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
-64
-65        <meta-data
-65-->[com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5e6c3a29e5535152e71116f575bdc825/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
-66            android:name="com.google.android.gms.version"
-66-->[com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5e6c3a29e5535152e71116f575bdc825/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
-67            android:value="@integer/google_play_services_version" />
-67-->[com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5e6c3a29e5535152e71116f575bdc825/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
-68    </application>
-69
-70</manifest>
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme"
+35-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:21:7-38
+36        android:usesCleartextTraffic="true" >
+36-->/home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifest.xml:7:18-53
+37        <activity
+37-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:22:7-32:18
+38            android:name="com.scanit.MainActivity"
+38-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:23:9-37
+39            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+39-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:25:9-86
+40            android:label="@string/app_name"
+40-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:24:9-41
+41            android:launchMode="singleTask"
+41-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:26:9-40
+42            android:windowSoftInputMode="adjustResize" >
+42-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:27:9-51
+43            <intent-filter>
+43-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:28:9-31:25
+44                <action android:name="android.intent.action.MAIN" />
+44-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:29:13-65
+44-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:29:21-62
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:30:13-73
+46-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:30:23-70
+47            </intent-filter>
+48        </activity>
+49        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+49-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:33:7-84
+49-->/home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:33:17-81
+50
+51        <provider
+51-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+52            android:name="cl.json.RNShareFileProvider"
+52-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-55
+53            android:authorities="com.scanit.rnshare.fileprovider"
+53-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-72
+54            android:exported="false"
+54-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+55            android:grantUriPermissions="true" >
+55-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+56            <meta-data
+56-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:64
+57                android:name="android.support.FILE_PROVIDER_PATHS"
+57-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+58                android:resource="@xml/share_download_paths" />
+58-->[:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-61
+59        </provider>
+60
+61        <activity
+61-->[com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+62            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+62-->[com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+63            android:exported="false"
+63-->[com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+64            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+64-->[com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+65
+66        <meta-data
+66-->[com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+67            android:name="com.google.android.gms.version"
+67-->[com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+68            android:value="@integer/google_play_services_version" />
+68-->[com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+69    </application>
+70
+71</manifest>

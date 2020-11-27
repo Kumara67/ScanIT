@@ -1,24 +1,40 @@
-import React, {Component, useEffect, useState} from 'react';
-import {Appbar, Avatar} from 'react-native-paper';
+import React, {useEffect, useState} from 'react';
+import {Appbar, Avatar, Menu, Divider} from 'react-native-paper';
 import {
   View,
   Text,
   TouchableOpacity,
   FlatList,
   Image,
-  ActivityIndicator,
   Alert,
 } from 'react-native';
 import * as RNFS from 'react-native-fs';
 import Share from 'react-native-share';
+import {connect} from 'react-redux';
+import {
+  updatePassword,
+  updatePathsArray,
+  updateReRender,
+  updateSelectedItems,
+  updateUserName,
+} from '../actions/actionDefs';
+import {RSA} from 'react-native-rsa-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import SaveCreds from './SaveCreds';
 
-export default FileListView = (props) => {
-  const [pathsArray, setPathsArray] = useState([]);
-  const [selectedItems, setSelectedItems] = useState([]);
+const FileListView = (props) => {
+  // const [pathsArray, setPathsArray] = useState([]);
+  // const [selectedItems, setSelectedItems] = useState([]);
   const [rerender, forceRerender] = useState('someKey');
   const [logout, setLogout] = useState(true);
+  const [visible, setVisible] = useState(false);
+  const [credVisi, setCredVisi] = useState(true);
+  const {selectedItems} = props;
+  const openMenu = () => setVisible(true);
+  const closeMenu = () => setVisible(false);
 
   useEffect(() => {
+    credsVisible();
     // Subscribe for the focus Listener
     const unsubscribe = props.navigation.addListener('focus', () => {
       readDirectory();
@@ -29,6 +45,16 @@ export default FileListView = (props) => {
     };
   }, [props.navigation]);
 
+  const credsVisible = async() => {
+    try {
+      const userName = await AsyncStorage.getItem('userName');
+      if (userName !== null) {
+        setCredVisi(false);
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
   const readDirectory = async () => {
     let res = await RNFS.readdir(RNFS.ExternalDirectoryPath);
     var count = 0;
@@ -37,11 +63,11 @@ export default FileListView = (props) => {
       results.push({
         key: (count + 1).toString(),
         path: RNFS.ExternalDirectoryPath + '/' + item,
-        folder: item,
+        folderName: item,
       });
       count = count + 1;
       if (count === res.length) {
-        setPathsArray(results);
+        props.updatePathsArray(results);
       }
     });
   };
@@ -91,14 +117,15 @@ export default FileListView = (props) => {
       },
       {text: 'Cancel', onPress: () => false},
     ]);
-    setSelectedItems([]);
+    // setSelectedItems([]);
+    props.updateSelectedItems([]);
     readDirectory();
   };
 
   const _onLogout = () => {
     try {
       if (logout) {
-        Alert.alert('Logout','Are you sure want to Logout?', [
+        Alert.alert('Logout', 'Are you sure want to Logout?', [
           {
             text: 'Cancel',
             onPress: () => setLogout(true),
@@ -108,7 +135,11 @@ export default FileListView = (props) => {
             onPress: () => {
               Alert.alert(
                 "You're successfully looged out!!    Thank you for using our app.",
-              );  
+              );
+              props.updateUserName('');
+              props.updatePassword('');
+              // setSelectedItems([]);
+              props.updateSelectedItems([]);
               props.navigation.navigate('Welcome');
             },
           },
@@ -119,72 +150,163 @@ export default FileListView = (props) => {
     }
   };
 
+  const deleteCreds = () => {
+    Alert.alert(
+      'Delete Credentials',
+      'Do you want to delete your stored credentials?',
+      [
+        {
+          text: 'Yes',
+          onPress: async () => {
+            try {
+              // await AsyncStorage.removeItem('userName');
+              // await AsyncStorage.removeItem('userPass');
+              await AsyncStorage.clear();
+              props.updateUserName('');
+              props.updatePassword('');
+              Alert.alert('Credentials Succesfully Removed.!');
+              props.navigation.navigate('Welcome');
+            } catch (error) {
+              console.log(error.message);
+            }
+          },
+        },
+        {
+          text: 'No',
+          onPress: () => false,
+        },
+      ],
+    );
+    closeMenu();
+  };
+
+  async function saveCreds(user, pass, defaultPass) {
+    try {
+      let pubkey = await AsyncStorage.getItem('publicKey');
+      let priKey = await AsyncStorage.getItem('privateKey');
+      if (pubkey === null || priKey === null) {
+        const keys = await RSA.generateKeys(1024);
+        await AsyncStorage.setItem('publicKey', keys.public);
+        await AsyncStorage.setItem('privateKey', keys.private);
+        pubkey = keys.public;
+        priKey = keys.private;
+      } else {
+        pubkey = await AsyncStorage.getItem('publicKey');
+        priKey = await AsyncStorage.getItem('privateKey');
+      }
+      const encryptDefault = await RSA.encrypt(defaultPass, pubkey);
+      const encryptUser = await RSA.encrypt(user, pubkey);
+      const encryptPass = await RSA.encrypt(pass, pubkey);
+
+      await AsyncStorage.setItem('userName', encryptUser);
+      await AsyncStorage.setItem('userPass', encryptPass);
+      await AsyncStorage.setItem('defaultPass', encryptDefault);
+    } catch (error) {
+      console.log(err.message);
+    }
+  }
+
   return (
     <View style={{flex: 1}}>
       <Appbar.Header>
         <Appbar.BackAction onPress={() => _onLogout()} />
-        <Appbar.Content title="Files List" />
+        <Appbar.Content title={`Welcome ${props.route.params.userName}`} />
         <Appbar.Action icon="magnify" />
-        <Appbar.Action icon="dots-vertical" />
+
+        <Menu
+          visible={visible}
+          onDismiss={closeMenu}
+          anchor={
+            <Appbar.Action
+              icon="dots-vertical"
+              onPress={() => {
+                openMenu();
+              }}
+              color="white"
+            />
+          }>
+          <Menu.Item
+            onPress={() => {
+              deleteCreds();
+            }}
+            title="Delete Credentials"
+          />
+          <Divider />
+          <Menu.Item
+            onPress={() => {
+              _onLogout();
+            }}
+            title="Logout"
+          />
+        </Menu>
       </Appbar.Header>
+      {credVisi ? (
+        <SaveCreds
+          saveHandler={() => {
+            saveCreds(props.userName, props.userPass, props.defaultPass);
+            props.updateUserName('');
+            props.updatePassword('');
+            setCredVisi(false);
+          }}
+        />
+      ) : null}
+      {selectedItems.length > 0 && (
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-evenly',
+            padding: 3,
+          }}>
+          <TouchableOpacity
+            style={{
+              backgroundColor: 'grey',
+              borderRadius: 10,
+              padding: 5,
+              justifyContent: 'center',
+              elevation: 9,
+            }}
+            onPress={() => {
+              // setSelectedItems(props.pathsArray);
+              props.updateSelectedItems(props.pathsArray);
+            }}>
+            <Text style={{textAlign: 'center', fontSize: 15, color: '#fff'}}>
+              Select All
+            </Text>
+          </TouchableOpacity>
 
-      {pathsArray.length === 0 ? (
+          <Text
+            style={{
+              textAlign: 'center',
+              fontSize: 15,
+              color: '#fff',
+              backgroundColor: 'grey',
+              borderRadius: 10,
+              padding: 5,
+              justifyContent: 'center',
+            }}>
+            {`${selectedItems.length} - Selected`}
+          </Text>
+          <TouchableOpacity
+            style={{
+              backgroundColor: 'grey',
+              borderRadius: 10,
+              padding: 5,
+              justifyContent: 'center',
+              elevation: 9,
+            }}
+            onPress={() => {
+              // setSelectedItems([]);
+              props.updateSelectedItems([]);
+            }}>
+            <Text style={{textAlign: 'center', fontSize: 15, color: '#fff'}}>
+              Unselect All
+            </Text>
+          </TouchableOpacity>
+        </View>
+      )}
+
+      {props.pathsArray.length === 0 ? (
         <View style={{flex: 1, justifyContent: 'center'}}>
-          {selectedItems.length > 0 && (
-            <View
-              style={{
-                flexDirection: 'row',
-                justifyContent: 'space-evenly',
-                padding: 3,
-              }}>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: 'grey',
-                  borderRadius: 10,
-                  padding: 5,
-                  justifyContent: 'center',
-                  elevation: 9,
-                }}
-                onPress={() => {
-                  setSelectedItems(imageArray);
-                }}>
-                <Text
-                  style={{textAlign: 'center', fontSize: 15, color: '#fff'}}>
-                  Select All
-                </Text>
-              </TouchableOpacity>
-
-              <Text
-                style={{
-                  textAlign: 'center',
-                  fontSize: 15,
-                  color: '#fff',
-                  backgroundColor: 'grey',
-                  borderRadius: 10,
-                  padding: 5,
-                  justifyContent: 'center',
-                }}>
-                {`${selectedItems.length} - Selected`}
-              </Text>
-
-              <TouchableOpacity
-                style={{
-                  backgroundColor: 'grey',
-                  borderRadius: 10,
-                  padding: 5,
-                  justifyContent: 'center',
-                  elevation: 9,
-                }}
-                onPress={() => {
-                  setSelectedItems([]);
-                }}>
-                <Text
-                  style={{textAlign: 'center', fontSize: 15, color: '#fff'}}>
-                  unselect All
-                </Text>
-              </TouchableOpacity>
-            </View>
-          )}
           <Text
             style={{
               textAlign: 'center',
@@ -202,7 +324,7 @@ Click on the Camera Icon to Crete new File`}
             justifyContent: 'space-evenly',
             alignSelf: 'center',
           }}
-          data={pathsArray}
+          data={props.pathsArray}
           numColumns={3}
           renderItem={({item}) => (
             <TouchableOpacity
@@ -221,16 +343,21 @@ Click on the Camera Icon to Crete new File`}
                   if (newSL.includes(item)) {
                     let index = newSL.indexOf(item);
                     let retVal = newSL.splice(index, 1);
-                    setSelectedItems(newSL);
+                    // setSelectedItems(newSL);
+                    props.updateSelectedItems(newSL);
+                    // props.updateReRender(new Date().toString());
                     forceRerender(new Date().toString());
                   } else {
                     newSL.push(item);
-                    setSelectedItems(newSL);
+                    // setSelectedItems(newSL);
+                    props.updateSelectedItems(newSL);
+                    // props.updateReRender(new Date().toString());
                     forceRerender(new Date().toString());
                   }
                 } else {
-                  props.navigation.navigate('FileGallery', {
+                  props.navigation.navigate('Gallery', {
                     folderPath: item.path,
+                    folderName: item.folderName,
                   });
                 }
               }}
@@ -240,7 +367,9 @@ Click on the Camera Icon to Crete new File`}
                 } else {
                   let newSL = selectedItems;
                   newSL.push(item);
-                  setSelectedItems(newSL);
+                  // setSelectedItems(newSL);
+                  props.updateSelectedItems(newSL);
+                  // props.updateReRender(new Date().toString());
                   forceRerender(new Date().toString());
                 }
               }}>
@@ -250,7 +379,7 @@ Click on the Camera Icon to Crete new File`}
                 style={{height: 80, width: 80}}
               />
               <Text style={{textAlign: 'center', width: 100}}>
-                {item.folder}
+                {item.folderName}
               </Text>
             </TouchableOpacity>
           )}
@@ -312,3 +441,22 @@ Click on the Camera Icon to Crete new File`}
     </View>
   );
 };
+const mapStateToProps = (state) => {
+  return {
+    pathsArray: state.FileReducer.pathsArray,
+    selectedItems: state.FileReducer.selectedItems,
+    userName: state.LoginReducer.userName,
+    userPass: state.LoginReducer.userPass,
+    defaultPass: state.LoginReducer.defaultPass,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updatePathsArray: (path) => dispatch(updatePathsArray(path)),
+    updateSelectedItems: (item) => dispatch(updateSelectedItems(item)),
+    updateReRender: (render) => dispatch(updateReRender(render)),
+    updatePassword: (password) => dispatch(updatePassword(password)),
+    updateUserName: (userName) => dispatch(updateUserName(userName)),
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(FileListView);

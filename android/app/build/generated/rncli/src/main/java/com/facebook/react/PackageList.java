@@ -11,6 +11,8 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// @react-native-async-storage/async-storage
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // react-native-camera
@@ -19,6 +21,8 @@ import org.reactnative.camera.RNCameraPackage;
 import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+// react-native-rsa-native
+import com.RNRSA.RNRSAPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
@@ -72,10 +76,12 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new AsyncStoragePackage(),
       new RNCMaskedViewPackage(),
       new RNCameraPackage(),
       new RNFSPackage(),
       new RNGestureHandlerPackage(),
+      new RNRSAPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
       new RNSharePackage(),

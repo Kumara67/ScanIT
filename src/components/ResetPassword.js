@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Appbar} from 'react-native-paper';
+import {connect} from 'react-redux';
 import {
   View,
   Text,
@@ -9,28 +10,44 @@ import {
   Keyboard,
 } from 'react-native';
 
-export default ResetPassword = ({navigation, ...props}) => {
-  const [user, setUser] = React.useState('');
-  const [nPass, setNpass] = React.useState('');
-  const [cPass, setCpass] = React.useState('');
+import {
+  updateConfirmPassword,
+  updateDefaultPassword,
+  updatePassword,
+  updateUserName,
+} from '../actions/actionDefs';
+const ResetPassword = (props) => {
   function validation() {
-    if (!user.trim() || !nPass.trim() || !cPass.trim()) {
+    const {userName, userPass, conPass} = props;
+
+    if (!userName.trim() || !userPass.trim() || !conPass.trim()) {
       Alert.alert('username and passwords cannot be empty');
+      props.updateUsername('');
+      props.updatePassword('');
+      props.updateConfirmPassword('');
       return;
     }
-    if ((user.includes('admin') || user.includes('Admin')) && nPass === cPass) {
+    if (userName.toLowerCase().includes('admin') && userPass === conPass) {
+      Alert.alert('Password sucessfully changed.!!');
       Keyboard.dismiss();
-      navigation.navigate('Login');
-      props.route.params.callbackPass(cPass);
+      props.updateUsername('');
+      props.updatePassword('');
+      props.updateConfirmPassword('');
+      props.updateDefaultPassword(conPass);
+      props.navigation.navigate('Login');
     } else {
+      props.updateUsername('');
+      props.updatePassword('');
+      props.updateConfirmPassword('');
       Alert.alert('New Password and Confirm Passwords donot match..!!');
+      return;
     }
   }
 
   return (
     <View style={{flex: 1}}>
       <Appbar.Header>
-        <Appbar.BackAction onPress={() => navigation.goBack()} />
+        <Appbar.BackAction onPress={() => props.navigation.goBack()} />
         <Appbar.Content title="Reset Password" />
         <Appbar.Action icon="dots-vertical" />
       </Appbar.Header>
@@ -45,7 +62,7 @@ export default ResetPassword = ({navigation, ...props}) => {
             marginBottom: 10,
           }}
           placeholder={'User Name'}
-          onChangeText={(user) => setUser(user)}
+          onChangeText={(user) => props.updateUsername(user)}
         />
         <TextInput
           style={{
@@ -58,7 +75,7 @@ export default ResetPassword = ({navigation, ...props}) => {
           }}
           placeholder={'New Password'}
           secureTextEntry={true}
-          onChangeText={(nPass) => setNpass(nPass)}
+          onChangeText={(nPass) => props.updatePassword(nPass)}
         />
         <TextInput
           style={{
@@ -70,7 +87,7 @@ export default ResetPassword = ({navigation, ...props}) => {
           }}
           placeholder={'Confirm password'}
           secureTextEntry={true}
-          onChangeText={(cPass) => setCpass(cPass)}
+          onChangeText={(cPass) => props.updateConfirmPassword(cPass)}
         />
       </View>
       <View
@@ -83,7 +100,7 @@ export default ResetPassword = ({navigation, ...props}) => {
         <TouchableOpacity
           onPress={() => {
             Keyboard.dismiss();
-            navigation.goBack();
+            props.navigation.goBack();
           }}>
           <Text
             style={{
@@ -121,3 +138,22 @@ export default ResetPassword = ({navigation, ...props}) => {
     </View>
   );
 };
+
+const mapStateToProps = (state) => {
+  return {
+    userName: state.LoginReducer.userName,
+    userPass: state.LoginReducer.userPass,
+    conPass: state.LoginReducer.conPass,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateUsername: (userName) => dispatch(updateUserName(userName)),
+    updatePassword: (pass) => dispatch(updatePassword(pass)),
+    updateConfirmPassword: (conPass) =>
+      dispatch(updateConfirmPassword(conPass)),
+    updateDefaultPassword: (nPass) => dispatch(updateDefaultPassword(nPass)),
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(ResetPassword);

@@ -3,19 +3,27 @@ import {View, Text, TouchableOpacity, Image, Alert} from 'react-native';
 import * as RNFS from 'react-native-fs';
 import {Appbar} from 'react-native-paper';
 import Share from 'react-native-share';
+import {connect} from 'react-redux';
+import {updateBase64} from '../actions/actionDefs';
 
-export default Preview = (props) => {
-  const [base64, setBase64] = useState('');
+const Preview = (props) => {
+  // const [base64, setBase64] = useState('');
   var currImagePath = props.route.params.path;
-  let imageName = currImagePath.slice(currImagePath.lastIndexOf('/')+1, currImagePath.length)
+  let imageName = currImagePath.slice(
+    currImagePath.lastIndexOf('/') + 1,
+    currImagePath.length,
+  );
 
   const _onShare = async () => {
     RNFS.readFile(`file://${currImagePath}`, 'base64')
-      .then((res) => setBase64(res))
+      .then((res) => 
+      // setBase64(res)
+      props.updateBase64(res)
+      )
       .catch((err) => console.log(err));
     try {
       await Share.open({
-        url: 'data:image/jpg;base64,' + base64,
+        url: 'data:image/jpg;base64,' + props.base64,
         message: imageName,
       });
     } catch (error) {
@@ -63,8 +71,7 @@ export default Preview = (props) => {
           alignItems: 'center',
           justifyContent: 'space-around',
         }}>
-        <TouchableOpacity
-          style={{backgroundColor: 'purple', borderRadius: 15}}>
+        <TouchableOpacity style={{backgroundColor: 'purple', borderRadius: 15}}>
           <Text
             style={{
               color: '#fff',
@@ -75,13 +82,13 @@ export default Preview = (props) => {
               width: 150,
               fontWeight: 'bold',
             }}
-            onPress={_onShare}>
+            onPress={()=> _onShare()}>
             SHARE
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={{backgroundColor: 'purple', borderRadius: 15}}
-          onPress={_onDelete}>
+          onPress={()=> _onDelete()}>
           <Text
             style={{
               color: '#fff',
@@ -99,3 +106,17 @@ export default Preview = (props) => {
     </View>
   );
 };
+
+const mapStateToProps = (state) => {
+  return {
+    base64: state.FileReducer.base64,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateBase64: (data) => dispatch(updateBase64(data)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Preview);

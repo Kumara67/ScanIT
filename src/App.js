@@ -9,8 +9,10 @@ import CameraScreen from './components/CameraScreen';
 import Gallery from './components/Gallery';
 import Preview from './components/Preview';
 import ResetPassword from './components/ResetPassword';
-import { Provider as PaperProvider, DefaultTheme } from 'react-native-paper';
-import FileGallery from './components/FileGallery';
+import {Provider as PaperProvider, DefaultTheme} from 'react-native-paper';
+import {} from 'redux';
+import {Provider as ReduxProvider} from 'react-redux';
+import store from './store';
 
 const Stack = createStackNavigator();
 
@@ -22,27 +24,27 @@ const theme = {
     primary: 'purple',
     accent: 'white',
   },
-  
-}; 
+};
 
-export default App = (props) => {
+const App = (props) => {
   return (
-      <PaperProvider theme={theme}>
-    <NavigationContainer>
-
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Welcome">
-          {() => <SplashScreen {...props} />}
-        </Stack.Screen>
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="FilesList" component={FileListView} />
-        <Stack.Screen name="Capture" component={CameraScreen} />
-        <Stack.Screen name="Gallery" component={Gallery} />
-        <Stack.Screen name="Preview" component={Preview} />
-        <Stack.Screen name="PasswordReset" component={ResetPassword} />
-        <Stack.Screen name="FileGallery" component={FileGallery} />
-      </Stack.Navigator>
-    </NavigationContainer>
-      </PaperProvider>
+    <PaperProvider theme={theme}>
+      <ReduxProvider store={store}>
+        <NavigationContainer>
+          <Stack.Navigator screenOptions={{headerShown: false}}>
+            <Stack.Screen name="Welcome">
+              {() => <SplashScreen {...props} />}
+            </Stack.Screen>
+            <Stack.Screen name="Login" component={Login} />
+            <Stack.Screen name="FilesList" component={FileListView} />
+            <Stack.Screen name="Capture" component={CameraScreen} />
+            <Stack.Screen name="Gallery" component={Gallery} />
+            <Stack.Screen name="Preview" component={Preview} />
+            <Stack.Screen name="PasswordReset" component={ResetPassword} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </ReduxProvider>
+    </PaperProvider>
   );
 };
+export default App;

@@ -1,16 +1,38 @@
 import React, {Component, useState, useEffect} from 'react';
 import {Appbar} from 'react-native-paper';
 import * as RNFS from 'react-native-fs';
-import {View, Text, TouchableOpacity, FlatList, Image, Alert} from 'react-native';
-
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  FlatList,
+  Image,
+  Alert,
+} from 'react-native';
 import Share from 'react-native-share';
+import {connect} from 'react-redux';
+import {
+  updateImageArray,
+  updateReRender,
+  updateSelectedItems,
+  updateUserFolder,
+} from '../actions/actionDefs';
 
-export default Gallery = (props) => {
-  const [imageArray, setImages] = useState([]);
-
-  const [selectedItems, setSelectedItems] = useState([]);
+const Gallery = (props) => {
+  // const [imageArray, setImages] = useState([]);
+  // const [selectedItems, setSelectedItems] = useState([]);
   const [rerender, forceRerender] = useState('someKey');
+  const {selectedItems} = props;
+
+  let folderName = props.route.params.folderName;
+  let folderPath = '';
+
   useEffect(() => {
+    if (props.route.params.hasOwnProperty('folderPath')) {
+      folderPath = props.route.params.folderPath;
+    } else {
+      folderPath = `${RNFS.ExternalDirectoryPath}/${folderName}`;
+    } 
     // Subscribe for the focus Listener
     const unsubscribe = props.navigation.addListener('focus', () => {
       readDirectory();
@@ -22,8 +44,6 @@ export default Gallery = (props) => {
   }, [props.navigation]);
 
   const readDirectory = async () => {
-    let folderPath =
-      RNFS.ExternalDirectoryPath + '/' + props.route.params.folderName;
     let res = await RNFS.readdir(folderPath);
     var count = 0;
     var results = [];
@@ -34,7 +54,7 @@ export default Gallery = (props) => {
       });
       count = count + 1;
       if (count === res.length) {
-        setImages(results);
+        props.updateImageArray(results);
       }
     });
   };
@@ -85,14 +105,20 @@ export default Gallery = (props) => {
       {text: 'Cancel', onPress: () => false},
     ]);
     readDirectory();
-    setSelectedItems([]);
+    props.updateSelectedItems([]);
   };
 
   return (
     <View style={{flex: 1}}>
       <Appbar.Header>
-        <Appbar.BackAction onPress={() => props.navigation.goBack()} />
-        <Appbar.Content title={props.route.params.folderName} />
+        <Appbar.BackAction
+          onPress={() => {
+            props.updateUserFolder('');
+            props.updateSelectedItems([]);
+            props.navigation.navigate('FilesList');
+          }}
+        />
+        <Appbar.Content title={folderName} />
         <Appbar.Action icon="magnify" />
         <Appbar.Action icon="dots-vertical" />
       </Appbar.Header>
@@ -113,7 +139,7 @@ export default Gallery = (props) => {
               elevation: 9,
             }}
             onPress={() => {
-              setSelectedItems(imageArray);
+              props.updateSelectedItems(props.imageArray);
             }}>
             <Text style={{textAlign: 'center', fontSize: 15, color: '#fff'}}>
               Select All
@@ -130,7 +156,7 @@ export default Gallery = (props) => {
               padding: 5,
               justifyContent: 'center',
             }}>
-            {`${selectedItems.length} - Selected`}
+            {`${props.selectedItems.length} - Selected`}
           </Text>
 
           <TouchableOpacity
@@ -142,7 +168,8 @@ export default Gallery = (props) => {
               elevation: 9,
             }}
             onPress={() => {
-              setSelectedItems([]);
+              // setSelectedItems([]);
+              props.updateSelectedItems([]);
             }}>
             <Text style={{textAlign: 'center', fontSize: 15, color: '#fff'}}>
               unselect All
@@ -152,8 +179,9 @@ export default Gallery = (props) => {
       )}
       <FlatList
         style={{flex: 1}}
+        contentContainerStyle={{alignItems: 'center'}}
         numColumns={2}
-        data={imageArray}
+        data={props.imageArray}
         renderItem={({item}) => (
           <TouchableOpacity
             style={{
@@ -171,11 +199,15 @@ export default Gallery = (props) => {
                 if (newSL.includes(item)) {
                   let index = newSL.indexOf(item);
                   newSL.splice(index, 1);
-                  setSelectedItems(newSL);
+                  // setSelectedItems(newSL);
+                  props.updateSelectedItems([]);
                   forceRerender(new Date().toString());
+                  // props.updateReRender(new Date().toString());
                 } else {
                   newSL.push(item);
-                  setSelectedItems(newSL);
+                  // setSelectedItems(newSL);
+                  props.updateSelectedItems(newSL);
+                  // props.updateReRender(new Date().toString());
                   forceRerender(new Date().toString());
                 }
               } else {
@@ -190,13 +222,16 @@ export default Gallery = (props) => {
               } else {
                 let newSL = selectedItems;
                 newSL.push(item);
-                setSelectedItems(newSL);
+                // setSelectedItems(newSL);
+                props.updateSelectedItems(newSL);
+                // props.updateReRender(new Date().toString());
                 forceRerender(new Date().toString());
               }
             }}>
             <Image
               source={{uri: `file://${item.path}`}}
-              style={{height: 170, width: 170, borderRadius: 10}}></Image>
+              style={{height: 150, width: 150, borderRadius: 10}}
+            />
           </TouchableOpacity>
         )}
         keyExtractor={(item) => item.key}
@@ -226,7 +261,10 @@ export default Gallery = (props) => {
           </Text>
         ) : (
           <Text
-            onPress={() => props.navigation.navigate('FilesList')}
+            onPress={() => {
+              props.navigation.navigate('FilesList');
+              props.updateUserFolder('');
+            }}
             style={{
               backgroundColor: 'purple',
               padding: 10,
@@ -259,7 +297,11 @@ export default Gallery = (props) => {
           </Text>
         ) : (
           <Text
-            onPress={() => props.navigation.goBack()}
+            onPress={() =>
+              props.navigation.navigate('Capture', {
+                folderName: folderName,
+              })
+            }
             style={{
               backgroundColor: 'purple',
               padding: 10,
@@ -278,3 +320,19 @@ export default Gallery = (props) => {
     </View>
   );
 };
+const mapStateToProps = (state) => {
+  return {
+    selectedItems: state.FileReducer.selectedItems,
+    imageArray: state.FileReducer.imageArray,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateSelectedItems: (item) => dispatch(updateSelectedItems(item)),
+    updateImageArray: (item) => dispatch(updateImageArray(item)),
+    updateReRender: (item) => dispatch(updateReRender(item)),
+    updateUserFolder: (item) => dispatch(updateUserFolder(item)),
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Gallery);
