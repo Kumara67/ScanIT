@@ -4,7 +4,7 @@
             "outputFile": "/home/kumara/Dev/Practice/ScanIt/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/b058cda32d7fc75b0153169eacbd0342/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/46d9743eec2f2ac018af0628aba10b89/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

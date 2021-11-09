@@ -5,9 +5,9 @@ INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManif
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:1:1-36:12
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:1:1-36:12
 MERGED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:1:1-36:12
-MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2fa344e99fbc8cc928a5b46ed302cce1/jetified-flipper-0.54.0/AndroidManifest.xml:8:1-18:12
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8bf96f9eb5b3abe401dc34c608cb5c50/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/24f504f2b61feebe5031e2ff3bc2f359/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/640e02c462dd9ed473d16d24880f195a/jetified-flipper-0.54.0/AndroidManifest.xml:8:1-18:12
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/d83e4364cda519fc8fd3720f308c4aa6/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b0cec35444eace6850e53b349e8aa81f/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-async-storage_async-storage] /home/kumara/Dev/Practice/ScanIt/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] /home/kumara/Dev/Practice/ScanIt/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-camera] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
@@ -17,72 +17,73 @@ MERGED from [:react-native-rsa-native] /home/kumara/Dev/Practice/ScanIt/node_mod
 MERGED from [:react-native-safe-area-context] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-sqlite-storage] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-sqlite-storage/platforms/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-vector-icons] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/5395d4b772c696142d18377ec98a4001/jetified-react-native-0.63.3/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/08e86a5f1c00dc4e2390ec58821e31ba/jetified-play-services-vision-17.0.2/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/b5dcfaa8be053004b7fd65489ccbfdc2/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/be783bd41bec923643a7985e5277211e/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/3fe6bd7ef1773ac2b2bf6d23a5d50e2f/jetified-play-services-flags-16.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2964ac920cf8fbd334c7cbe7b3ef2507/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/3929842dd29ca69e17068cdf47460139/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/64510bfc53883d7f8053d3342b05f8f0/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e4e8626b1d17facb21a10f2e7082f0af/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9c84055754f1c87eff14f587bd78fd99/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [org.webkit:android-jsc:r245459] /home/kumara/.gradle/caches/transforms-2/files-2.1/eba012192f65e553ae124d0b3eef1754/jetified-android-jsc-r245459/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.fresco:flipper:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/ffb6a13a24aa13d185d3240fb0ee97a6/jetified-flipper-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:stetho:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/da0e7975205652305c05fdbed3f860b6/jetified-stetho-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fresco:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8ab248264789434ddf60377ab9bc1933/jetified-fresco-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3cbdd9582ce9e971a165ee2aa51184e5/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/643f66ab014bed564dd6dbb051ff6b5a/jetified-drawee-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/89db4e18877e7eb9b088c42bd54b3f35/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/14710ac8fe1900ca819dd0dddb89715e/jetified-memory-type-native-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8781b871fdca12a24b9f49166d0fbeb9/jetified-memory-type-java-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9bc5a7e0bd3d5e7bacc69739229a39f9/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1efd0ec4d0b3426eeefed6cfbd2fbdd8/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/ff3c7a1129215c417ad0533e6b1fc0ba/jetified-imagepipeline-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1c1eefff4608a9b45621187d86990aba/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7cee5811df5386ee74cc63946edb9d39/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:soloader:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9dcf8c27a87d78a2b089d75891c0d343/jetified-soloader-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/82e32226770e7595a19887711df159fa/jetified-soloader-0.9.0/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/116c92be44f96604e1209df60e1d9ac4/material-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b058cda32d7fc75b0153169eacbd0342/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/23ae9862fd63953fe822263587f26450/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e02f8841bb4ca3346e6f3e1eaf68b059/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/796eba4622e5a8778daab750247f3383/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/aa36a664a83c234c8605f3f62f279952/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/73f1e0ed924875f56b11ecb48d46736a/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.2.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/1dcbcec8fb42d0cb1ac5629912b30ae0/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/04fe1cf7606b90f9cb8df4b3bc2c0704/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a12103609621d6476c67087988f446eb/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b49cb3f93573dfb8171d97333d9b0539/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4b684755a92e15858e98f18a8ee8b947/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/592b6298ab2558351583203bd5502305/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5376f3c10895a5502061b2ac8ed69848/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e08fbba4a0f462019aba9a0098567606/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a0facfeaf3f521670d3995f10fa386d1/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5dc53a54d78a2013e13ea7a87c8c8b79/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9cbff826781ad1c387f53660899f1c2a/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/24945afba3086c2eda6ad9500f689da1/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/de52477c0eb03bf70d6e1fe1ec844beb/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/149c98d3f9f084562a438cde40327e19/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7f5aeccd48d5bc731df0adf1c8d7029e/core-1.1.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4174bdeb50db28d1c6b035379845b410/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/15acab26cd1f176207f34587624b9258/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a96dca018cd0761e0a07d018b0b4ea8b/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/22789a278b235dd7ebe2bfee64aeb811/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/61f845698b9acdf07921b104d66b6f28/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/bcbea9d98743def5fc0cf67ce3d1fa88/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/da05685ec2533a4b02e4ce355ca1449e/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/458c91cb1d241c1aa9039fb976bb2cf6/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/76843626636a359b879ca8334f0b7b01/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/412371994b64770a9390eff8ca2df5a5/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/195dc3b275d59c1d6892b7737945d667/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/bbe7fcb5e4054c22b2ef5ae90372ea5d/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7c9fd3ba690abcfb93720c866c223859/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/d0276c1added6a4092813831a8cd410e/jetified-fbcore-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4df48f7cf5b6728b783ea4a41d9b0fc1/jetified-ui-common-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/84bed094234cc188934eaa19ce537de8/jetified-react-native-0.63.3/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/91a7100fa5d2685c4946ff27dcde0a8a/jetified-play-services-vision-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/7407d2ac7073b420cce8180e9d935ea7/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3c352998e39891f8643217db45b06365/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/23e8007a6bef28053fe02f6cda3d82d9/jetified-play-services-flags-16.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/0df8a2083aa6c52e736123a2c6aacc1f/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/cf91b3d8b7ec904403b0dc5eef3c7185/jetified-play-services-base-16.0.1/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/e1bfff9c8aaff29c4c60195010a2bbc5/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4ef49fb9a3dd4ec93aa64295ad03e415/jetified-play-services-basement-16.1.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b67ad2359946a617c0d37c5a9a2afd8f/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6a40e98f5d080f7d3082480b97704113/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1ef74dfc4dd65a980b72076a78ebf2da/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [org.webkit:android-jsc:r245459] /home/kumara/.gradle/caches/transforms-2/files-2.1/8ba86982ffba108365316ace548d4f0e/jetified-android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:flipper:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/50a51809450b2b554e2bf865420b273f/jetified-flipper-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:stetho:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8ca69e66a1252ac3f5daa86ff472b7c9/jetified-stetho-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fresco:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c23ea537793d6ec52ead415ae77faa5e/jetified-fresco-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/da926edf3222263244b765f4992b0b43/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/062bbaae81ee9d61438b709face288b8/jetified-drawee-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/08d796bbf20d77c6676f44bad001909a/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c6d0a165df4e469cc3f1a5fd5ba3f098/jetified-memory-type-native-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/de77e627ed8cc8bec3b1adfe798f4a32/jetified-memory-type-java-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/f98a63ababfc5cea57030a67c2fc5d61/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c555892f6f1f5feeaa17ebffaab51365/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2c98f53510590a2f99394bc24d1eab0c/jetified-imagepipeline-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1aa6554055b7a0f6e8bd3612b6b327c9/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a397f774cc32e9fe2cd67e9b6ef90a7b/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:soloader:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/55ce28f4d67924bedfbf643e3e3662d1/jetified-soloader-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6d32697e9b6801705e1190922d193d42/jetified-soloader-0.9.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4296203f7d4d1414389621fac63d5822/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/46d9743eec2f2ac018af0628aba10b89/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/191ebaec0811f833a22fe66bc14744e7/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3d11cc332d99af123a0c9d5eca897337/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c6a88932cd5a86b531a78d76b0fefb57/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6131cf7dd16afa950639500f339b3074/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/23e80da3f8e0f40f68ddd592d921a7a9/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/efd5377a4979346f52353122e33cd616/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/591876b1dcb09215eb14effd58bb0c8a/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/721fc5600d2ea79def5abfd8cae41a84/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/353caa6eb2661044b6396e87a3b19c67/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7259d1326a560c03ab8638ecae148466/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/aade5036fd713c689a8b71226dd2e6b7/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/70269a53b172b8a72b99f43de73ef356/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/245e6930bac2dad4e43559fa0575b467/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a89f8c6b640b3423358adca8f3a45835/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/04160c90573c0b3df2dd593667f4017e/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/f91a350a306928090355aa8f228b55f0/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3615873fe2183265d75a71cdae04aa0a/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/10384b909e23a7e3bf9b6a0f942c182c/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/63ccfb95c151684353cf89e8572c00cd/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/936cb5c7c30dd0dc083debbe3b303168/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2ac2d512250fbf66c377e24f834fc40a/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/49c70109d3f340f1bc09b6062f28ea1f/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c4b714f276383ea0e8748a4eb6813e77/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/bb9ad1d7819dcbfc066cf0bf0c85a45d/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/d183187f67afe032ed5918e180b3907f/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/59e268035014b48b5b6127d03a8921e6/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b425dd1f3b3d51d60fe8a0562b76ed3c/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3ba7794b5ff76d3bcb8f520163bafaa2/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e3afdc53f846ebada4b3fa27bbf946a5/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a93a19f6912466e3f5c79dff373320e4/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5735f1772c666e9d993a022c284ac7fd/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/50f42efbe4728117f9242c33894ec47e/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/98de1087123e658ca823f7e2863a658e/jetified-fbcore-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e6dc4f03f614ca91523a328d70f1a9ac/jetified-ui-common-2.2.0/AndroidManifest.xml:2:1-9:12
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -105,8 +106,8 @@ INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidMani
 		ADDED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2fa344e99fbc8cc928a5b46ed302cce1/jetified-flipper-0.54.0/AndroidManifest.xml:15:5-67
-MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2fa344e99fbc8cc928a5b46ed302cce1/jetified-flipper-0.54.0/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/640e02c462dd9ed473d16d24880f195a/jetified-flipper-0.54.0/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/640e02c462dd9ed473d16d24880f195a/jetified-flipper-0.54.0/AndroidManifest.xml:15:5-67
 	android:name
 		ADDED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.CAMERA
@@ -137,32 +138,32 @@ MERGED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifes
 MERGED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:15:5-34:19
 MERGED from [:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/5395d4b772c696142d18377ec98a4001/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/5395d4b772c696142d18377ec98a4001/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/08e86a5f1c00dc4e2390ec58821e31ba/jetified-play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/08e86a5f1c00dc4e2390ec58821e31ba/jetified-play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/b5dcfaa8be053004b7fd65489ccbfdc2/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/b5dcfaa8be053004b7fd65489ccbfdc2/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/be783bd41bec923643a7985e5277211e/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/be783bd41bec923643a7985e5277211e/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2964ac920cf8fbd334c7cbe7b3ef2507/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2964ac920cf8fbd334c7cbe7b3ef2507/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/3929842dd29ca69e17068cdf47460139/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/3929842dd29ca69e17068cdf47460139/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/82e32226770e7595a19887711df159fa/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/82e32226770e7595a19887711df159fa/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/116c92be44f96604e1209df60e1d9ac4/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/116c92be44f96604e1209df60e1d9ac4/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7f5aeccd48d5bc731df0adf1c8d7029e/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7f5aeccd48d5bc731df0adf1c8d7029e/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/15acab26cd1f176207f34587624b9258/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/15acab26cd1f176207f34587624b9258/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/84bed094234cc188934eaa19ce537de8/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/84bed094234cc188934eaa19ce537de8/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/91a7100fa5d2685c4946ff27dcde0a8a/jetified-play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/91a7100fa5d2685c4946ff27dcde0a8a/jetified-play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/7407d2ac7073b420cce8180e9d935ea7/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/7407d2ac7073b420cce8180e9d935ea7/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3c352998e39891f8643217db45b06365/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3c352998e39891f8643217db45b06365/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/0df8a2083aa6c52e736123a2c6aacc1f/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/0df8a2083aa6c52e736123a2c6aacc1f/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/cf91b3d8b7ec904403b0dc5eef3c7185/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/cf91b3d8b7ec904403b0dc5eef3c7185/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/e1bfff9c8aaff29c4c60195010a2bbc5/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/e1bfff9c8aaff29c4c60195010a2bbc5/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4ef49fb9a3dd4ec93aa64295ad03e415/jetified-play-services-basement-16.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4ef49fb9a3dd4ec93aa64295ad03e415/jetified-play-services-basement-16.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6d32697e9b6801705e1190922d193d42/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6d32697e9b6801705e1190922d193d42/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4296203f7d4d1414389621fac63d5822/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4296203f7d4d1414389621fac63d5822/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/936cb5c7c30dd0dc083debbe3b303168/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/936cb5c7c30dd0dc083debbe3b303168/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7f5aeccd48d5bc731df0adf1c8d7029e/core-1.1.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/936cb5c7c30dd0dc083debbe3b303168/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:17:7-39
 		ADDED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml:17:7-39
@@ -217,12 +218,12 @@ uses-sdk
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/main/AndroidManifest.xml
-MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2fa344e99fbc8cc928a5b46ed302cce1/jetified-flipper-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2fa344e99fbc8cc928a5b46ed302cce1/jetified-flipper-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8bf96f9eb5b3abe401dc34c608cb5c50/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8bf96f9eb5b3abe401dc34c608cb5c50/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/24f504f2b61feebe5031e2ff3bc2f359/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/24f504f2b61feebe5031e2ff3bc2f359/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/640e02c462dd9ed473d16d24880f195a/jetified-flipper-0.54.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/640e02c462dd9ed473d16d24880f195a/jetified-flipper-0.54.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/d83e4364cda519fc8fd3720f308c4aa6/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/d83e4364cda519fc8fd3720f308c4aa6/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b0cec35444eace6850e53b349e8aa81f/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b0cec35444eace6850e53b349e8aa81f/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
 MERGED from [:react-native-async-storage_async-storage] /home/kumara/Dev/Practice/ScanIt/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-async-storage_async-storage] /home/kumara/Dev/Practice/ScanIt/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /home/kumara/Dev/Practice/ScanIt/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -241,138 +242,140 @@ MERGED from [:react-native-screens] /home/kumara/Dev/Practice/ScanIt/node_module
 MERGED from [:react-native-screens] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-sqlite-storage] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-sqlite-storage/platforms/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-sqlite-storage] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-sqlite-storage/platforms/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/5395d4b772c696142d18377ec98a4001/jetified-react-native-0.63.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/5395d4b772c696142d18377ec98a4001/jetified-react-native-0.63.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/08e86a5f1c00dc4e2390ec58821e31ba/jetified-play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/08e86a5f1c00dc4e2390ec58821e31ba/jetified-play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/b5dcfaa8be053004b7fd65489ccbfdc2/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/b5dcfaa8be053004b7fd65489ccbfdc2/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/be783bd41bec923643a7985e5277211e/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/be783bd41bec923643a7985e5277211e/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/3fe6bd7ef1773ac2b2bf6d23a5d50e2f/jetified-play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/3fe6bd7ef1773ac2b2bf6d23a5d50e2f/jetified-play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2964ac920cf8fbd334c7cbe7b3ef2507/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2964ac920cf8fbd334c7cbe7b3ef2507/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/3929842dd29ca69e17068cdf47460139/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/3929842dd29ca69e17068cdf47460139/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/64510bfc53883d7f8053d3342b05f8f0/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/64510bfc53883d7f8053d3342b05f8f0/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e4e8626b1d17facb21a10f2e7082f0af/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e4e8626b1d17facb21a10f2e7082f0af/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9c84055754f1c87eff14f587bd78fd99/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9c84055754f1c87eff14f587bd78fd99/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [org.webkit:android-jsc:r245459] /home/kumara/.gradle/caches/transforms-2/files-2.1/eba012192f65e553ae124d0b3eef1754/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /home/kumara/.gradle/caches/transforms-2/files-2.1/eba012192f65e553ae124d0b3eef1754/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:flipper:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/ffb6a13a24aa13d185d3240fb0ee97a6/jetified-flipper-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:flipper:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/ffb6a13a24aa13d185d3240fb0ee97a6/jetified-flipper-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/da0e7975205652305c05fdbed3f860b6/jetified-stetho-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/da0e7975205652305c05fdbed3f860b6/jetified-stetho-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8ab248264789434ddf60377ab9bc1933/jetified-fresco-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8ab248264789434ddf60377ab9bc1933/jetified-fresco-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3cbdd9582ce9e971a165ee2aa51184e5/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3cbdd9582ce9e971a165ee2aa51184e5/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/643f66ab014bed564dd6dbb051ff6b5a/jetified-drawee-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/643f66ab014bed564dd6dbb051ff6b5a/jetified-drawee-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/89db4e18877e7eb9b088c42bd54b3f35/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/89db4e18877e7eb9b088c42bd54b3f35/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/14710ac8fe1900ca819dd0dddb89715e/jetified-memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/14710ac8fe1900ca819dd0dddb89715e/jetified-memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8781b871fdca12a24b9f49166d0fbeb9/jetified-memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8781b871fdca12a24b9f49166d0fbeb9/jetified-memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9bc5a7e0bd3d5e7bacc69739229a39f9/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9bc5a7e0bd3d5e7bacc69739229a39f9/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1efd0ec4d0b3426eeefed6cfbd2fbdd8/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1efd0ec4d0b3426eeefed6cfbd2fbdd8/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/ff3c7a1129215c417ad0533e6b1fc0ba/jetified-imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/ff3c7a1129215c417ad0533e6b1fc0ba/jetified-imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1c1eefff4608a9b45621187d86990aba/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1c1eefff4608a9b45621187d86990aba/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7cee5811df5386ee74cc63946edb9d39/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7cee5811df5386ee74cc63946edb9d39/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:soloader:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9dcf8c27a87d78a2b089d75891c0d343/jetified-soloader-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:soloader:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9dcf8c27a87d78a2b089d75891c0d343/jetified-soloader-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/82e32226770e7595a19887711df159fa/jetified-soloader-0.9.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/82e32226770e7595a19887711df159fa/jetified-soloader-0.9.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/116c92be44f96604e1209df60e1d9ac4/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/116c92be44f96604e1209df60e1d9ac4/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b058cda32d7fc75b0153169eacbd0342/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b058cda32d7fc75b0153169eacbd0342/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/23ae9862fd63953fe822263587f26450/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/23ae9862fd63953fe822263587f26450/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e02f8841bb4ca3346e6f3e1eaf68b059/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e02f8841bb4ca3346e6f3e1eaf68b059/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/796eba4622e5a8778daab750247f3383/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/796eba4622e5a8778daab750247f3383/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/aa36a664a83c234c8605f3f62f279952/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/aa36a664a83c234c8605f3f62f279952/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/73f1e0ed924875f56b11ecb48d46736a/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/73f1e0ed924875f56b11ecb48d46736a/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/1dcbcec8fb42d0cb1ac5629912b30ae0/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/1dcbcec8fb42d0cb1ac5629912b30ae0/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/04fe1cf7606b90f9cb8df4b3bc2c0704/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/04fe1cf7606b90f9cb8df4b3bc2c0704/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a12103609621d6476c67087988f446eb/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a12103609621d6476c67087988f446eb/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b49cb3f93573dfb8171d97333d9b0539/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b49cb3f93573dfb8171d97333d9b0539/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4b684755a92e15858e98f18a8ee8b947/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4b684755a92e15858e98f18a8ee8b947/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/592b6298ab2558351583203bd5502305/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/592b6298ab2558351583203bd5502305/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5376f3c10895a5502061b2ac8ed69848/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5376f3c10895a5502061b2ac8ed69848/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e08fbba4a0f462019aba9a0098567606/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e08fbba4a0f462019aba9a0098567606/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a0facfeaf3f521670d3995f10fa386d1/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a0facfeaf3f521670d3995f10fa386d1/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5dc53a54d78a2013e13ea7a87c8c8b79/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5dc53a54d78a2013e13ea7a87c8c8b79/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9cbff826781ad1c387f53660899f1c2a/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/9cbff826781ad1c387f53660899f1c2a/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/24945afba3086c2eda6ad9500f689da1/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/24945afba3086c2eda6ad9500f689da1/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/de52477c0eb03bf70d6e1fe1ec844beb/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/de52477c0eb03bf70d6e1fe1ec844beb/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/149c98d3f9f084562a438cde40327e19/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/149c98d3f9f084562a438cde40327e19/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7f5aeccd48d5bc731df0adf1c8d7029e/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7f5aeccd48d5bc731df0adf1c8d7029e/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4174bdeb50db28d1c6b035379845b410/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4174bdeb50db28d1c6b035379845b410/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/15acab26cd1f176207f34587624b9258/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/15acab26cd1f176207f34587624b9258/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a96dca018cd0761e0a07d018b0b4ea8b/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a96dca018cd0761e0a07d018b0b4ea8b/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/22789a278b235dd7ebe2bfee64aeb811/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/22789a278b235dd7ebe2bfee64aeb811/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/61f845698b9acdf07921b104d66b6f28/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/61f845698b9acdf07921b104d66b6f28/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/bcbea9d98743def5fc0cf67ce3d1fa88/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/bcbea9d98743def5fc0cf67ce3d1fa88/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/da05685ec2533a4b02e4ce355ca1449e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/da05685ec2533a4b02e4ce355ca1449e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/458c91cb1d241c1aa9039fb976bb2cf6/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/458c91cb1d241c1aa9039fb976bb2cf6/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/76843626636a359b879ca8334f0b7b01/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/76843626636a359b879ca8334f0b7b01/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/412371994b64770a9390eff8ca2df5a5/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/412371994b64770a9390eff8ca2df5a5/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/195dc3b275d59c1d6892b7737945d667/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/195dc3b275d59c1d6892b7737945d667/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/bbe7fcb5e4054c22b2ef5ae90372ea5d/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/bbe7fcb5e4054c22b2ef5ae90372ea5d/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7c9fd3ba690abcfb93720c866c223859/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7c9fd3ba690abcfb93720c866c223859/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/d0276c1added6a4092813831a8cd410e/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/d0276c1added6a4092813831a8cd410e/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4df48f7cf5b6728b783ea4a41d9b0fc1/jetified-ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4df48f7cf5b6728b783ea4a41d9b0fc1/jetified-ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/84bed094234cc188934eaa19ce537de8/jetified-react-native-0.63.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.3] /home/kumara/.gradle/caches/transforms-2/files-2.1/84bed094234cc188934eaa19ce537de8/jetified-react-native-0.63.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/91a7100fa5d2685c4946ff27dcde0a8a/jetified-play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/91a7100fa5d2685c4946ff27dcde0a8a/jetified-play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/7407d2ac7073b420cce8180e9d935ea7/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/kumara/.gradle/caches/transforms-2/files-2.1/7407d2ac7073b420cce8180e9d935ea7/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3c352998e39891f8643217db45b06365/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3c352998e39891f8643217db45b06365/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/23e8007a6bef28053fe02f6cda3d82d9/jetified-play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/23e8007a6bef28053fe02f6cda3d82d9/jetified-play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/0df8a2083aa6c52e736123a2c6aacc1f/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/0df8a2083aa6c52e736123a2c6aacc1f/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/cf91b3d8b7ec904403b0dc5eef3c7185/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/cf91b3d8b7ec904403b0dc5eef3c7185/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/e1bfff9c8aaff29c4c60195010a2bbc5/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/e1bfff9c8aaff29c4c60195010a2bbc5/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4ef49fb9a3dd4ec93aa64295ad03e415/jetified-play-services-basement-16.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4ef49fb9a3dd4ec93aa64295ad03e415/jetified-play-services-basement-16.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b67ad2359946a617c0d37c5a9a2afd8f/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b67ad2359946a617c0d37c5a9a2afd8f/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6a40e98f5d080f7d3082480b97704113/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6a40e98f5d080f7d3082480b97704113/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1ef74dfc4dd65a980b72076a78ebf2da/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1ef74dfc4dd65a980b72076a78ebf2da/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [org.webkit:android-jsc:r245459] /home/kumara/.gradle/caches/transforms-2/files-2.1/8ba86982ffba108365316ace548d4f0e/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /home/kumara/.gradle/caches/transforms-2/files-2.1/8ba86982ffba108365316ace548d4f0e/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:flipper:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/50a51809450b2b554e2bf865420b273f/jetified-flipper-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:flipper:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/50a51809450b2b554e2bf865420b273f/jetified-flipper-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8ca69e66a1252ac3f5daa86ff472b7c9/jetified-stetho-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8ca69e66a1252ac3f5daa86ff472b7c9/jetified-stetho-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c23ea537793d6ec52ead415ae77faa5e/jetified-fresco-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c23ea537793d6ec52ead415ae77faa5e/jetified-fresco-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/da926edf3222263244b765f4992b0b43/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/da926edf3222263244b765f4992b0b43/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/062bbaae81ee9d61438b709face288b8/jetified-drawee-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/062bbaae81ee9d61438b709face288b8/jetified-drawee-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/08d796bbf20d77c6676f44bad001909a/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/08d796bbf20d77c6676f44bad001909a/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c6d0a165df4e469cc3f1a5fd5ba3f098/jetified-memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c6d0a165df4e469cc3f1a5fd5ba3f098/jetified-memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/de77e627ed8cc8bec3b1adfe798f4a32/jetified-memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/de77e627ed8cc8bec3b1adfe798f4a32/jetified-memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/f98a63ababfc5cea57030a67c2fc5d61/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/f98a63ababfc5cea57030a67c2fc5d61/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c555892f6f1f5feeaa17ebffaab51365/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c555892f6f1f5feeaa17ebffaab51365/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2c98f53510590a2f99394bc24d1eab0c/jetified-imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2c98f53510590a2f99394bc24d1eab0c/jetified-imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1aa6554055b7a0f6e8bd3612b6b327c9/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/1aa6554055b7a0f6e8bd3612b6b327c9/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a397f774cc32e9fe2cd67e9b6ef90a7b/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a397f774cc32e9fe2cd67e9b6ef90a7b/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/55ce28f4d67924bedfbf643e3e3662d1/jetified-soloader-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/55ce28f4d67924bedfbf643e3e3662d1/jetified-soloader-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6d32697e9b6801705e1190922d193d42/jetified-soloader-0.9.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6d32697e9b6801705e1190922d193d42/jetified-soloader-0.9.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4296203f7d4d1414389621fac63d5822/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4296203f7d4d1414389621fac63d5822/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/46d9743eec2f2ac018af0628aba10b89/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/46d9743eec2f2ac018af0628aba10b89/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/191ebaec0811f833a22fe66bc14744e7/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/191ebaec0811f833a22fe66bc14744e7/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3d11cc332d99af123a0c9d5eca897337/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3d11cc332d99af123a0c9d5eca897337/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c6a88932cd5a86b531a78d76b0fefb57/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c6a88932cd5a86b531a78d76b0fefb57/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6131cf7dd16afa950639500f339b3074/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/6131cf7dd16afa950639500f339b3074/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/23e80da3f8e0f40f68ddd592d921a7a9/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/23e80da3f8e0f40f68ddd592d921a7a9/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/efd5377a4979346f52353122e33cd616/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/efd5377a4979346f52353122e33cd616/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/591876b1dcb09215eb14effd58bb0c8a/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/591876b1dcb09215eb14effd58bb0c8a/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/721fc5600d2ea79def5abfd8cae41a84/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/721fc5600d2ea79def5abfd8cae41a84/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/353caa6eb2661044b6396e87a3b19c67/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/353caa6eb2661044b6396e87a3b19c67/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7259d1326a560c03ab8638ecae148466/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/7259d1326a560c03ab8638ecae148466/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/aade5036fd713c689a8b71226dd2e6b7/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/aade5036fd713c689a8b71226dd2e6b7/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/70269a53b172b8a72b99f43de73ef356/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/70269a53b172b8a72b99f43de73ef356/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/245e6930bac2dad4e43559fa0575b467/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/245e6930bac2dad4e43559fa0575b467/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a89f8c6b640b3423358adca8f3a45835/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a89f8c6b640b3423358adca8f3a45835/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/04160c90573c0b3df2dd593667f4017e/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/04160c90573c0b3df2dd593667f4017e/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/f91a350a306928090355aa8f228b55f0/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/f91a350a306928090355aa8f228b55f0/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3615873fe2183265d75a71cdae04aa0a/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3615873fe2183265d75a71cdae04aa0a/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/10384b909e23a7e3bf9b6a0f942c182c/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/10384b909e23a7e3bf9b6a0f942c182c/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/63ccfb95c151684353cf89e8572c00cd/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/63ccfb95c151684353cf89e8572c00cd/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/936cb5c7c30dd0dc083debbe3b303168/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/936cb5c7c30dd0dc083debbe3b303168/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2ac2d512250fbf66c377e24f834fc40a/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2ac2d512250fbf66c377e24f834fc40a/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/49c70109d3f340f1bc09b6062f28ea1f/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/49c70109d3f340f1bc09b6062f28ea1f/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c4b714f276383ea0e8748a4eb6813e77/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/c4b714f276383ea0e8748a4eb6813e77/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/bb9ad1d7819dcbfc066cf0bf0c85a45d/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/bb9ad1d7819dcbfc066cf0bf0c85a45d/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/d183187f67afe032ed5918e180b3907f/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/d183187f67afe032ed5918e180b3907f/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/59e268035014b48b5b6127d03a8921e6/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/59e268035014b48b5b6127d03a8921e6/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b425dd1f3b3d51d60fe8a0562b76ed3c/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/b425dd1f3b3d51d60fe8a0562b76ed3c/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3ba7794b5ff76d3bcb8f520163bafaa2/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/3ba7794b5ff76d3bcb8f520163bafaa2/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e3afdc53f846ebada4b3fa27bbf946a5/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e3afdc53f846ebada4b3fa27bbf946a5/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a93a19f6912466e3f5c79dff373320e4/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/a93a19f6912466e3f5c79dff373320e4/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5735f1772c666e9d993a022c284ac7fd/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/5735f1772c666e9d993a022c284ac7fd/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/50f42efbe4728117f9242c33894ec47e/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/50f42efbe4728117f9242c33894ec47e/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/98de1087123e658ca823f7e2863a658e/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/98de1087123e658ca823f7e2863a658e/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e6dc4f03f614ca91523a328d70f1a9ac/jetified-ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/e6dc4f03f614ca91523a328d70f1a9ac/jetified-ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifest.xml
 INJECTED from /home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -386,9 +389,9 @@ ADDED from /home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifes
 	android:name
 		ADDED from /home/kumara/Dev/Practice/ScanIt/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2fa344e99fbc8cc928a5b46ed302cce1/jetified-flipper-0.54.0/AndroidManifest.xml:16:5-76
+ADDED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/640e02c462dd9ed473d16d24880f195a/jetified-flipper-0.54.0/AndroidManifest.xml:16:5-76
 	android:name
-		ADDED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/2fa344e99fbc8cc928a5b46ed302cce1/jetified-flipper-0.54.0/AndroidManifest.xml:16:22-73
+		ADDED from [com.facebook.flipper:flipper:0.54.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/640e02c462dd9ed473d16d24880f195a/jetified-flipper-0.54.0/AndroidManifest.xml:16:22-73
 uses-feature#android.hardware.camera
 ADDED from [:react-native-camera] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
 	android:required
@@ -418,16 +421,16 @@ ADDED from [:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/r
 	android:name
 		ADDED from [:react-native-share] /home/kumara/Dev/Practice/ScanIt/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/cf91b3d8b7ec904403b0dc5eef3c7185/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/cf91b3d8b7ec904403b0dc5eef3c7185/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/cf91b3d8b7ec904403b0dc5eef3c7185/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/87acc49301ff0bfe1d1d9c36c3215f0e/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kumara/.gradle/caches/transforms-2/files-2.1/cf91b3d8b7ec904403b0dc5eef3c7185/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4ef49fb9a3dd4ec93aa64295ad03e415/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4ef49fb9a3dd4ec93aa64295ad03e415/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/34fa1d4dbea971782ae5d127fec72ad2/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/kumara/.gradle/caches/transforms-2/files-2.1/4ef49fb9a3dd4ec93aa64295ad03e415/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58

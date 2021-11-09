@@ -4,7 +4,7 @@
             "outputFile": "/home/kumara/Dev/Practice/ScanIt/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/b058cda32d7fc75b0153169eacbd0342/appcompat-1.1.0/res/values-land/values-land.xml",
+                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/46d9743eec2f2ac018af0628aba10b89/appcompat-1.1.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/116c92be44f96604e1209df60e1d9ac4/material-1.1.0/res/values-land/values-land.xml",
+                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/4296203f7d4d1414389621fac63d5822/material-1.1.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

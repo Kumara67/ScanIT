@@ -4,7 +4,7 @@
             "outputFile": "/home/kumara/Dev/Practice/ScanIt/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/b49cb3f93573dfb8171d97333d9b0539/media-1.0.0/res/values-v24/values-v24.xml",
+                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/353caa6eb2661044b6396e87a3b19c67/media-1.0.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/b058cda32d7fc75b0153169eacbd0342/appcompat-1.1.0/res/values-v24/values-v24.xml",
+                    "source": "/home/kumara/.gradle/caches/transforms-2/files-2.1/46d9743eec2f2ac018af0628aba10b89/appcompat-1.1.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

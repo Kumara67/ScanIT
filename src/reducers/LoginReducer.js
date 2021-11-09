@@ -10,7 +10,7 @@ const initialState = {
   userPass: '',
   userName: '',
   defaultPass: 'admin',
-  conPass: '',
+  conPass: '',  
 };
 
 const LoginReducer = (state = initialState, action) => {

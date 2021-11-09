@@ -13,7 +13,9 @@ import {
   updateUserFolder,
 } from '../actions/actionDefs';
 import {connect} from 'react-redux';
+import DBThings from './DBThings';
 
+const dbTransactions = new DBThings();
 const CameraScreen = (props) => {
   var cameraRef = React.useRef(null);
   // const {count, lastClicked, showModal, tmpData, userFolder} = props;
@@ -51,11 +53,18 @@ const CameraScreen = (props) => {
       const dirName = `${RNFS.ExternalDirectoryPath}/${docName}`;
       const dirExists = await RNFS.exists(dirName);
       if (!dirExists) {
+        await dbTransactions.insertDOCQuery(docName, dirName, getTimeStamp());
         await RNFS.mkdir(dirName);
       }
-      const path = `${dirName}/ScanIt-${getTimeStamp()}.jpg`;
+      const path = `${dirName}/${docName}_${getTimeStamp()}.jpg`;
       await RNFS.writeFile(path, data, 'base64');
       console.log('FILE WRITTEN!');
+      await dbTransactions.insertFileQuery(
+        `${docName}_${getTimeStamp()}.jpg`,
+        path,
+        docName,
+        getTimeStamp(),
+      );
       props.updateLastClicked(path);
       props.updateCount(props.count + 1);
       props.updateTmpData('');
@@ -74,7 +83,6 @@ const CameraScreen = (props) => {
       date.getHours(),
       date.getMinutes(),
       date.getSeconds(),
-      date.getMilliseconds(),
     ];
     let dateString = comps.join('');
     return dateString;

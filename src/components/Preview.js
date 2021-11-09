@@ -5,7 +5,9 @@ import {Appbar} from 'react-native-paper';
 import Share from 'react-native-share';
 import {connect} from 'react-redux';
 import {updateBase64} from '../actions/actionDefs';
+import DBThings from './DBThings';
 
+const dbTransactions = new DBThings();
 const Preview = (props) => {
   // const [base64, setBase64] = useState('');
   var currImagePath = props.route.params.path;
@@ -13,12 +15,13 @@ const Preview = (props) => {
     currImagePath.lastIndexOf('/') + 1,
     currImagePath.length,
   );
+  let folderName = props.route.params.folderName;
 
   const _onShare = async () => {
     RNFS.readFile(`file://${currImagePath}`, 'base64')
-      .then((res) => 
-      // setBase64(res)
-      props.updateBase64(res)
+      .then((res) =>
+        // setBase64(res)
+        props.updateBase64(res),
       )
       .catch((err) => console.log(err));
     try {
@@ -36,6 +39,7 @@ const Preview = (props) => {
       {
         text: 'Delete',
         onPress: async () => {
+          await dbTransactions.deleteFileQuery(folderName);
           await RNFS.unlink(currImagePath);
           Alert.alert('Successfully Deleted');
           props.navigation.goBack();
@@ -82,13 +86,13 @@ const Preview = (props) => {
               width: 150,
               fontWeight: 'bold',
             }}
-            onPress={()=> _onShare()}>
+            onPress={() => _onShare()}>
             SHARE
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={{backgroundColor: 'purple', borderRadius: 15}}
-          onPress={()=> _onDelete()}>
+          onPress={() => _onDelete()}>
           <Text
             style={{
               color: '#fff',

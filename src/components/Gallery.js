@@ -17,7 +17,9 @@ import {
   updateSelectedItems,
   updateUserFolder,
 } from '../actions/actionDefs';
+import DBThings from './DBThings';
 
+const dbTransactions = new DBThings();
 const Gallery = (props) => {
   // const [imageArray, setImages] = useState([]);
   // const [selectedItems, setSelectedItems] = useState([]);
@@ -44,13 +46,14 @@ const Gallery = (props) => {
   }, [props.navigation]);
 
   const readDirectory = async () => {
-    let res = await RNFS.readdir(folderPath);
+    // let res = await RNFS.readdir(folderPath);
+    let res = await dbTransactions.galleryQuery(folderName);
     var count = 0;
     var results = [];
     res.forEach((item) => {
       results.push({
         key: (count + 1).toString(),
-        path: folderPath + '/' + item,
+        path: folderPath + '/' + item.fileName,
       });
       count = count + 1;
       if (count === res.length) {
@@ -213,6 +216,7 @@ const Gallery = (props) => {
               } else {
                 props.navigation.navigate('Preview', {
                   path: item.path,
+                  folderName : folderName,
                 });
               }
             }}

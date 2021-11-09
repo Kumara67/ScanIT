@@ -76,22 +76,22 @@ const Login = (props) => {
       </Appbar.Header>
 
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text style={styles.loginText}>
-          Login using your Username and Password
-        </Text>
-        <TextInput
-          style={styles.textInput}
-          value={props.userName}
-          placeholder={'UserName'}
-          onChangeText={(user) => props.updateUserName(user)}
-        />
-        <TextInput
-          style={styles.textInput}
-          value={props.userPass}
-          placeholder={'Password'}
-          secureTextEntry={true}
-          onChangeText={(Pass) => props.updatePassword(Pass)}
-        />
+          <Text style={styles.loginText}>
+            Login using your Username and Password
+          </Text>
+          <TextInput
+            style={styles.textInput}
+            value={props.userName}
+            placeholder={'UserName'}
+            onChangeText={(user) => props.updateUserName(user)}
+          />
+          <TextInput
+            style={styles.textInput}
+            value={props.userPass}
+            placeholder={'Password'}
+            secureTextEntry={true}
+            onChangeText={(Pass) => props.updatePassword(Pass)}
+          />
         <TouchableOpacity
           style={styles.passwordResetContainer}
           onPress={() => {

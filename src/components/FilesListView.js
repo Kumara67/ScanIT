@@ -21,7 +21,9 @@ import {
 import {RSA} from 'react-native-rsa-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import SaveCreds from './SaveCreds';
+import DBThings from './DBThings';
 
+const dbTransactions = new DBThings();
 const FileListView = (props) => {
   // const [pathsArray, setPathsArray] = useState([]);
   // const [selectedItems, setSelectedItems] = useState([]);
@@ -45,7 +47,7 @@ const FileListView = (props) => {
     };
   }, [props.navigation]);
 
-  const credsVisible = async() => {
+  const credsVisible = async () => {
     try {
       const userName = await AsyncStorage.getItem('userName');
       if (userName !== null) {
@@ -56,20 +58,26 @@ const FileListView = (props) => {
     }
   };
   const readDirectory = async () => {
-    let res = await RNFS.readdir(RNFS.ExternalDirectoryPath);
-    var count = 0;
-    var results = [];
-    res.forEach((item) => {
-      results.push({
-        key: (count + 1).toString(),
-        path: RNFS.ExternalDirectoryPath + '/' + item,
-        folderName: item,
+    // let res = await RNFS.readdir(RNFS.ExternalDirectoryPath);
+    let res = await dbTransactions.fileListQuery();
+    //  console.log(`DocFiles Result >>  ${res[0].docName}`)
+    if (res === undefined) {
+      props.updatePathsArray([]);
+    } else {
+      var count = 0;
+      var results = [];
+      res.forEach((item) => {
+        results.push({
+          key: (count + 1).toString(),
+          path: item.docPath,
+          folderName: item.docName,
+        });
+        count = count + 1;
+        if (count === res.length) {
+          props.updatePathsArray(results);
+        }
       });
-      count = count + 1;
-      if (count === res.length) {
-        props.updatePathsArray(results);
-      }
-    });
+    }
   };
 
   const _onShare = async () => {
@@ -107,6 +115,7 @@ const FileListView = (props) => {
         onPress: () => {
           try {
             selectedItems.forEach(async (item) => {
+              await dbTransactions.deleteFolderQuery(item.folderName);
               await RNFS.unlink(item.path);
               Alert.alert('Successfully Deleted selected items');
             });
@@ -225,6 +234,14 @@ const FileListView = (props) => {
               color="white"
             />
           }>
+          <Menu.Item
+            onPress={() => {
+              dbTransactions.dropTable();
+              console.log('Tables dropped!!');
+            }}
+            title="Drop tables"
+          />
+          <Divider />
           <Menu.Item
             onPress={() => {
               deleteCreds();
